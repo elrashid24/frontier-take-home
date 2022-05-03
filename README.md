@@ -7,6 +7,7 @@ We are building a vertically-integrated hiring marketplace that connects job see
 Everything starts with the candidate, and Frontier's highly optimized application form is the first piece of Frontier's product a candidate will interact with.
 
 ## 🛠 Your Challenge
+
 ![Form prototype](https://cdn.frontier.jobs/frontier-exercise-proto.png)
 
 Your challenge is to finish building Frontier's new candidate application form. This is a dynamic form that candidates will use to apply to any job on the Frontier platform.
@@ -26,18 +27,18 @@ We've added some form components and scaffolding so you can hit the ground runni
 - [ ] (optional) Add some validation to the form.
 - [ ] (optional) Come up with a way to only show the `experience` field if the user confirms they are 18+ years old. Ideally the method you use can be used to conditionally show any field depending on a previous answer.
 
-
 ## ⚙️ Getting Started
+
 1. Checkout the project, `cd` into the directory, and run `yarn` to install dependencies.
 2. Run the dev server using `yarn dev`.
 3. Open [http://localhost:3000](http://localhost:3000) with your browser.
 4. Make changes and the browser will automatically refresh.
 5. See the demo page to view available elements: [http://localhost:3000/elements](http://localhost:3000/elements).
 
-
-*This project was bootstrapped with create_next_app*
+_This project was bootstrapped with create_next_app_
 
 ## Principles
+
 - Please use Typescript to the best of your ability.
 - Please try to make good use of ES6 and React hooks.
 - Try to avoid using external npm modules unless there's good reason to.

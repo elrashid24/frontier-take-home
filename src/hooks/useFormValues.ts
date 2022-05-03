@@ -26,9 +26,10 @@ type FormReducerAction = {
  */
 export const useFormValues = (job?: Frontier.Job): UseFormValuesHookValue => {
   const valueReducer = (state: FormValues, action: FormReducerAction) => {
+    console.log('action', action, 'state', state);
     switch (action.type) {
       case 'change':
-        console.log('change field: %s=%s', action.id, action.nextVal)
+        console.log('change field: %s=%s', action.id, action.nextVal);
         return {
           ...state,
           [action.id]: action.nextVal,
@@ -49,7 +50,6 @@ export const useFormValues = (job?: Frontier.Job): UseFormValuesHookValue => {
         };
       }, {}) || {};
 
-
   const [values, dispatch] = useReducer(valueReducer, defaultValues);
 
   const handleChange: UseFormValuesHookValue['handleChange'] = (
@@ -58,7 +58,7 @@ export const useFormValues = (job?: Frontier.Job): UseFormValuesHookValue => {
   ) => {
     dispatch({ type: 'change', nextVal, id });
   };
-
+  console.log('values from the reducer', values);
   return {
     handleChange,
     values,

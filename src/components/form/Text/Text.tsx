@@ -8,7 +8,7 @@ export const Text = ({ onChange, value }: TextProps) => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     onChange(event.target.value || undefined);
   };
-
+  console.log('text value', value);
   return (
     <S.Frame>
       <S.Input type="text" value={value ?? ''} onChange={handleChange} />

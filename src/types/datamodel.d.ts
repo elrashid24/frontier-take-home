@@ -23,11 +23,7 @@ namespace Frontier {
   }
 
   // Describes one section of the job application UI
-  interface Section {
-    title: string;
-    id: string; // Unique (slug)
-    content: Element[];
-  }
+ 
 
   // Describes an individual user input element
   interface Element {
