@@ -12,8 +12,11 @@ export const Input = styled.input`
     ${({ theme }) => desaturate(0.6, darken(0.3, theme.background_color!))};
   outline: none;
   padding: ${Math.pow(1.414, -3)}rem ${Math.pow(1.414, -1)}rem;
-
   &:focus {
     border-color: ${({ theme }) => theme.primary_color};
   }
+`;
+
+export const Error = styled.input`
+  color: red;
 `;

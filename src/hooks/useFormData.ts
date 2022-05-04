@@ -12,7 +12,6 @@ export const useFormData = (): UseFormDataHookValue => {
   const [status, setStatus] = useState<UseFormDataHookValue['status']>('none');
 
   useEffect(() => {
-    console.log(jobData);
     if (jobData) return;
     const getDataFromServer = async () => {
       try {
@@ -57,11 +56,11 @@ const mockResponse = {
         {
           id: 'fullname',
           type: 'text',
-            metadata: {
-              format: 'text',
-              required: true,
-              placeholder: 'Enter your name',
-            },
+          metadata: {
+            format: 'text',
+            required: true,
+            placeholder: 'Enter your name',
+          },
           question_text: 'Full name',
         },
         {

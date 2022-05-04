@@ -5,9 +5,10 @@ export default function handler(
   res: NextApiResponse<unknown>,
 ) {
   console.log('Handle save data');
-  /* [TODO] 
+  console.log('the request', req);
+  /* [TODO]
    * 1. Receive form data here
    * 3. Return the right HTTP status code to the frontend, plus any other data
    * 3. Log the data to the console
-  */
+   */
 }
