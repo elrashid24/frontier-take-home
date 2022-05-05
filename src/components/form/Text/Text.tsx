@@ -1,7 +1,6 @@
 import * as S from './styles';
 import { ChangeEvent, FormEvent } from 'react';
 import { BaseField } from '../form';
-import { useState } from 'React';
 
 type TextProps = BaseField & {};
 

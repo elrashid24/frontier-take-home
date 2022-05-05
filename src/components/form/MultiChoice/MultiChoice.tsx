@@ -6,9 +6,10 @@ import Select from 'react-select';
 type MultiChoiceProps = BaseField & {};
 
 export const MultiChoice = ({ onChange, value, options }: MultiChoiceProps) => {
+  //@ts-ignore
   const languages = options?.options;
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log(event);
+    //@ts-ignore
     onChange(event?.value || undefined);
   };
 
